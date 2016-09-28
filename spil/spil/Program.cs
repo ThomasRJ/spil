@@ -11,6 +11,7 @@ namespace spil
         static void Main(string[] args)
         {
             Console.WriteLine("i want to die");
+            Console.WriteLine("do you too?")
           Console.ReadLine();
         }
     }
