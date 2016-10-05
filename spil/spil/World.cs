@@ -12,15 +12,16 @@ namespace spil
         public World()
         {
             rooms = new List<Room>();
-            Room r1 = new Room("Tog", "det var her du kom fra men du kan ikke komme ind igen");
-            Room r2 = new Room("Indgangen", "Indgangen til et mørkt Bygningskompleks");
-            Room r3 = new Room("Gården", "Du kan se en masse meget tynde mænd gå i ring");
-            Room r4 = new Room("Vagtlokale", "Døren er solid men der står på at det er vagternes omklædnings rum");
+            Room r1 = new Room("Mark", "En stor og grøn mark med masser af smukke planter og dyr");
+            Room r2 = new Room("Hus", "Indgangen til et mørkt hus");
+            Room r3 = new Room("Mørkt rum", "Et meget mørkt rum");
+            Room r4 = new Room("Fangekælder", "Uhyggeligt rum med masser af sjove lyde, du kan ikke se noget i dette rum");
 
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
             rooms.Add(r4);
+            rooms.Add(r5);
 
             r1.AddEast(r2);
             r2.AddWest(r1);
