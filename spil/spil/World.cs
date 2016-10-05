@@ -16,11 +16,13 @@ namespace spil
             Room r2 = new Room("Hus", "Indgangen til et mørkt hus");
             Room r3 = new Room("Mørkt rum", "Et meget mørkt rum");
             Room r4 = new Room("Fangekælder", "Uhyggeligt rum med masser af sjove lyde, du kan ikke se noget i dette rum");
+            Room r5 = new Room("Niggerbasement", "memes");
 
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
             rooms.Add(r4);
+            rooms.Add(r5);
 
             r1.AddEast(r2);
             r2.AddWest(r1);
