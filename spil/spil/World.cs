@@ -12,16 +12,27 @@ namespace spil
         public World()
         {
             rooms = new List<Room>();
-            Room r1 = new Room("Mark", "En stor og grøn mark med masser af smukke planter og dyr");
-            Room r2 = new Room("Hus", "Indgangen til et mørkt hus");
-            Room r3 = new Room("Mørkt rum", "Et meget mørkt rum");
-            Room r4 = new Room("Fangekælder", "Uhyggeligt rum med masser af sjove lyde, du kan ikke se noget i dette rum");
+            Room r1 = new Room("Tog", "memes");
+            Room r2 = new Room("Indgangen", "memes");
+            Room r3 = new Room("Vagtlokale", "memes");
+            Room r4 = new Room("Overvågnings Rum", "memes");
+            Room r5 = new Room("Gården", "memes");
+            Room r6 = new Room("Fængselschefens Kontor", "memes");
+            Room r7 = new Room("", "memes");
+            Room r8 = new Room("Niggerbasement", "memes");
+            Room r9 = new Room("Niggerbasement", "memes");
+
 
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
             rooms.Add(r4);
             rooms.Add(r5);
+            rooms.Add(r6);
+            rooms.Add(r7);
+            rooms.Add(r8);
+            rooms.Add(r9);
+
 
             r1.AddEast(r2);
             r2.AddWest(r1);
