@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace spil
 {
-    public class Items
+    public class Item
     {
-        public string navn;
-        public string beskrivelse; 
-
-
-        public Items(string beskrivelse, string navn);
+        public string Name { get; set; }
     }
 }
+
