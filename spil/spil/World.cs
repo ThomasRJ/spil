@@ -40,6 +40,11 @@ namespace spil
             r3.AddSouth(r2);
             r3.AddEast(r4);
 
+            Item i = new Item();
+            i.Name = "Rusty key";
+            Edge e = new Edge(r1, r2);
+            e.Required = i;
+
         }
 
         public void PrintWorld()
