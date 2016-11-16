@@ -59,7 +59,7 @@ namespace spil
                 case 'd':
                     if (world.p.currentRoom.east != null);
                     {
-                        world.p.currentRoom.east = world.p.currentRoom.east;
+                        world.p.currentRoom = world.p.currentRoom.east;
                     } 
                     break;
 
