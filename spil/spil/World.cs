@@ -8,7 +8,7 @@ namespace spil
 {
     public class World
     {
-        Player p = new Player();
+        public Player p = new Player();
         List<Room> rooms;
         public World()
         {

@@ -8,11 +8,64 @@ namespace spil
 {
     class Program
     {
+        static World world;
         static void Main(string[] args)
         {
-            World w = new World();
-            w.PrintWorld();
-            Console.ReadLine();
+            world = new World();
+    
+  
+            bool isRunning = true;
+
+            while(isRunning)
+            {
+                string s = Console.ReadLine();
+                if(s.ToLower().Equals("exit"))
+                {
+                    isRunning = false;
+                }
+                else
+                {
+                    HandleGame();
+                }
+            }
+        }
+
+        public static void HandleGame()
+        {
+            char c = Console.ReadKey(true).KeyChar;
+            switch (c)
+            {
+                case 'w':
+                    if(world.p.currentRoom.north != null)
+                    {
+                        world.p.currentRoom = world.p.currentRoom.north;
+                    }
+                    break;
+
+                case 'a':
+                    if (world.p.currentRoom.west != null);
+                    {
+                        world.p.currentRoom = world.p.currentRoom.west;
+                    }
+                    break;
+
+                case 's':
+                    if (world.p.currentRoom.south != null) ;
+                    {
+                        world.p.currentRoom = world.p.currentRoom.south;
+                    }
+                    break;
+
+                case 'd':
+                    if (world.p.currentRoom.east != null);
+                    {
+                        world.p.currentRoom.east = world.p.currentRoom.east;
+                    } 
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }
