@@ -8,9 +8,11 @@ namespace spil
 {
     public class World
     {
+        Player p = new Player();
         List<Room> rooms;
         public World()
         {
+            
             rooms = new List<Room>();
             Room r1 = new Room("Tog", "Her kom du fra");
             Room r2 = new Room("Indgangen", "En indgang til et mørkt bygnings kompleks");
@@ -40,10 +42,15 @@ namespace spil
             r3.AddSouth(r2);
             r3.AddEast(r4);
 
+            p.currentRoom = r1;
+
+            Console.WriteLine(p.currentRoom.ToString());
+
             Item i = new Item();
-            i.Name = "Rusty key";
-            Edge e = new Edge(r1, r2);
+            i.Name = "key";
+            Edge e = new Edge(r3, r4);
             e.Required = i;
+            Console.ReadLine();
 
         }
 
