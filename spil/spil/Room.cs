@@ -44,10 +44,10 @@ namespace spil
             string s = "";
             s += "Navn: " + navn + "\n";
             s += "Beskrivelse: " + beskrivelse + "\n";
-            if (north != null) s += "Udgang til: " + north.navn + "\n";
-            if (south != null) s += "Udgang til: " + south.navn + "\n";
-            if (west != null) s += "Udgang til: " + west.navn + "\n";
-            if (east != null) s += "Udgang til: " + east.navn + "\n";
+            if (north != null) s += "Udgang til nord: " + north.navn + "\n";
+            if (south != null) s += "Udgang til south: " + south.navn + "\n";
+            if (west != null) s += "Udgang til vest: " + west.navn + "\n";
+            if (east != null) s += "Udgang til oest: " + east.navn + "\n";
             return s;
         }
 

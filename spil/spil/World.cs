@@ -19,8 +19,8 @@ namespace spil
             Room r3 = new Room("Vagtlokale", "Pauserum for vagterne");
             Room r4 = new Room("Overvågnings Rum", "Et rum med sort/hvid tv-skærme");
             Room r5 = new Room("Gården", "Igennem et vindue, kan du se en masse tynde mænd gå rundt");
-            Room r6 = new Room("Fængselschefens Kontor", "");
-            Room r7 = new Room("Trænings område", "");
+            Room r6 = new Room("Fængselschefens Kontor", "Stor boss");
+            Room r7 = new Room("Trænings område", "Gains dude");
             Room r8 = new Room("basement", "memes");
             Room r9 = new Room("basement", "memes");
 
@@ -50,7 +50,6 @@ namespace spil
             i.Name = "key";
             Edge e = new Edge(r3, r4);
             e.Required = i;
-            Console.ReadLine();
 
         }
 

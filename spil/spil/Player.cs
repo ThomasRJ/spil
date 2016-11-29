@@ -9,5 +9,13 @@ namespace spil
     public class Player
     {
         public Room currentRoom;
+
+        public void EnterRoom()
+        {
+            if(currentRoom != null)
+            {
+                Console.WriteLine(currentRoom.ToString());
+            }
+        }
     }
 }
