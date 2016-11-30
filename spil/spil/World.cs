@@ -38,9 +38,15 @@ namespace spil
 
             r1.AddEast(r2);
             r2.AddWest(r1);
+            r2.AddSouth(r5);
             r2.AddNorth(r3);
             r3.AddSouth(r2);
             r3.AddEast(r4);
+            r3.AddNorth(r6);
+            r4.AddWest(r3);
+            r5.AddWest(r7);
+            r7.AddSouth(r3);
+
 
             p.currentRoom = r1;
 
