@@ -25,7 +25,7 @@ namespace spil
             Room r9 = new Room("Celle#1", "En eller anden bor her");
             Room r10 = new Room("Cellegang", "Flere celler");
             Room r11 = new Room("Celle#2", "Din celle");
-            Room r12 = new Room("Badene", "DU LUGTER");
+            Room r12 = new Room("Badene", "øn'pojpokåo");
 
 
             rooms.Add(r1);
