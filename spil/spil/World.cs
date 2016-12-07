@@ -21,8 +21,9 @@ namespace spil
             Room r5 = new Room("Gården", "Igennem et vindue, kan du se en masse tynde mænd gå rundt");
             Room r6 = new Room("Fængselschefens Kontor", "Stor boss");
             Room r7 = new Room("Trænings område", "Gains dude");
-            Room r8 = new Room("basement", "memes");
-            Room r9 = new Room("basement", "memes");
+            Room r8 = new Room("Cellegang", "Her er alle cellerne");
+            Room r9 = new Room("Celle#1", "En eller anden bor her");
+            Room r10 = new Room("Cellegang", "Flere celler");
 
 
             rooms.Add(r1);
@@ -45,7 +46,15 @@ namespace spil
             r3.AddNorth(r6);
             r4.AddWest(r3);
             r5.AddWest(r7);
-            r7.AddSouth(r3);
+            r5.AddSouth(r8);
+            r7.AddEast(r5);
+            r8.AddSouth(r9);
+            r8.AddEast(r10);
+            r8.AddNorth(r5);
+            r9.AddNorth(r8);
+            r10.AddWest(r8);
+
+
 
 
             p.currentRoom = r1;
