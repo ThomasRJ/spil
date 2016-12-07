@@ -35,6 +35,7 @@ namespace spil
             rooms.Add(r7);
             rooms.Add(r8);
             rooms.Add(r9);
+            rooms.Add(r10);
 
 
             r1.AddEast(r2);
