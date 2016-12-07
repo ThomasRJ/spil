@@ -25,6 +25,7 @@ namespace spil
             Room r9 = new Room("Celle#1", "En eller anden bor her");
             Room r10 = new Room("Cellegang", "Flere celler");
             Room r11 = new Room("Celle#2", "Din celle");
+            Room r12 = new Room("Badene", "DU LUGTER");
 
 
             rooms.Add(r1);
@@ -38,6 +39,7 @@ namespace spil
             rooms.Add(r9);
             rooms.Add(r10);
             rooms.Add(r11);
+            rooms.Add(r12);
 
 
             r1.AddSouth(r2);
@@ -52,6 +54,7 @@ namespace spil
             r5.AddSouth(r8);
             r5.AddNorth(r2);
             r7.AddEast(r5);
+            r7.AddSouth(r12);
             r8.AddSouth(r9);
             r8.AddEast(r10);
             r8.AddNorth(r5);
@@ -59,6 +62,7 @@ namespace spil
             r10.AddWest(r8);
             r10.AddSouth(r11);
             r11.AddNorth(r10);
+            r12.AddEast(r8);
 
 
 
