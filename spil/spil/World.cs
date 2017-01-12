@@ -8,11 +8,13 @@ namespace spil
 {
     public class World
     {
+        //Tilføjer en ny spiller
         public Player p = new Player();
         List<Room> rooms;
+        //Gør World public så den kan hænge sammen med vores andre sektioner (Player.cs, Room.cs osv..)
         public World()
         {
-            
+            //Alle rummene er listet:
             rooms = new List<Room>();
             Room r1 = new Room("Tog", "Her kom du fra");
             Room r2 = new Room("Indgangen", "En indgang til et mørkt bygnings kompleks");
@@ -32,7 +34,7 @@ namespace spil
             Room r16 = new Room("Celle#4", "Her bor et røvhul");
             Room r17 = new Room("Isolation", "Har du været dum? Så ender du her");
         
-
+            //Tilføjer rummene
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
@@ -51,7 +53,7 @@ namespace spil
             rooms.Add(r16);
             rooms.Add(r17);
 
-
+            //Gange mellem rummene, så altså hvilke muligheder der er mellem rummene.
             r1.AddSouth(r2);
             r2.AddWest(r1);
             r2.AddSouth(r5);
@@ -63,6 +65,7 @@ namespace spil
             r5.AddWest(r7);
             r5.AddSouth(r8);
             r5.AddNorth(r2);
+            r6.AddSouth(r3);
             r7.AddEast(r5);
             r7.AddSouth(r12);
             r8.AddSouth(r9);
@@ -87,9 +90,8 @@ namespace spil
 
 
 
-
+            //Den udskriver hvilket rum man er i og en beskrivelse af rummet.
             p.currentRoom = r1;
-
             Console.WriteLine(p.currentRoom.ToString());
 
             Item i = new Item();
@@ -98,7 +100,7 @@ namespace spil
             e.Required = i;
 
         }
-
+        //Den printer "world" til konsollen.
         public void PrintWorld()
         {
             foreach (Room r in rooms)

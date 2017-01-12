@@ -8,10 +8,12 @@ namespace spil
 {
     public class Room
     {
+        //Tilføjer retningerne altså nord, syd, øst og vest. 
         public Room north;
         public Room south;
         public Room west;
         public Room east;
+        //Navn og beskrivelse af rummene der bliver printet. 
         public string navn;
         public string beskrivelse;
 
@@ -20,7 +22,7 @@ namespace spil
             this.navn = navn;
             this.beskrivelse = beskrivelse;
         }
-
+        //Tilføjer retninger til alle rum (public)
         public void AddNorth(Room r)
         {
             north = r;
@@ -38,7 +40,7 @@ namespace spil
         {
             east = r;
         }
-
+        //Hvad der kommer ud i konsollen når man går fra rum til andet. 
         public override string ToString()
         {
             string s = "";
