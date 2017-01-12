@@ -23,18 +23,13 @@ namespace spil
             Room r5 = new Room("Gården", "Igennem et vindue, kan du se en masse tynde mænd gå rundt");
             Room r6 = new Room("Fængselschefens Kontor", "Stor boss");
             Room r7 = new Room("Trænings område", "Gains dude");
-            Room r8 = new Room("Cellegang#1", "Her er alle cellerne");
+            Room r8 = new Room("Cellegang", "Her er alle cellerne");
             Room r9 = new Room("Celle#1", "En eller anden bor her");
             Room r10 = new Room("Cellegang#2", "Flere celler");
             Room r11 = new Room("Celle#2", "Din celle");
-            Room r12 = new Room("Badene", "Tag et bad");
-            Room r13 = new Room("Cellegang#3", "Flere celler");
-            Room r14 = new Room("Kantine", "Her spiser man... Som regel");
-            Room r15 = new Room("Celle#3", "Tom Celle");
-            Room r16 = new Room("Celle#4", "Her bor et røvhul");
-            Room r17 = new Room("Isolation", "Har du været dum? Så ender du her");
-        
-            //Tilføjer rummene
+            Room r12 = new Room("Badene", "øn'pojpokåo");
+
+
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
