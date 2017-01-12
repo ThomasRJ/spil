@@ -21,12 +21,17 @@ namespace spil
             Room r5 = new Room("Gården", "Igennem et vindue, kan du se en masse tynde mænd gå rundt");
             Room r6 = new Room("Fængselschefens Kontor", "Stor boss");
             Room r7 = new Room("Trænings område", "Gains dude");
-            Room r8 = new Room("Cellegang", "Her er alle cellerne");
+            Room r8 = new Room("Cellegang#1", "Her er alle cellerne");
             Room r9 = new Room("Celle#1", "En eller anden bor her");
-            Room r10 = new Room("Cellegang", "Flere celler");
+            Room r10 = new Room("Cellegang#2", "Flere celler");
             Room r11 = new Room("Celle#2", "Din celle");
-            Room r12 = new Room("Badene", "øn'pojpokåo");
-
+            Room r12 = new Room("Badene", "Tag et bad");
+            Room r13 = new Room("Cellegang#3", "Flere celler");
+            Room r14 = new Room("Kantine", "Her spiser man... Som regel");
+            Room r15 = new Room("Celle#3", "Tom Celle");
+            Room r16 = new Room("Celle#4", "Her bor et røvhul");
+            Room r17 = new Room("Isolation", "Har du været dum? Så ender du her");
+        
 
             rooms.Add(r1);
             rooms.Add(r2);
@@ -40,6 +45,11 @@ namespace spil
             rooms.Add(r10);
             rooms.Add(r11);
             rooms.Add(r12);
+            rooms.Add(r13);
+            rooms.Add(r14);
+            rooms.Add(r15);
+            rooms.Add(r16);
+            rooms.Add(r17);
 
 
             r1.AddSouth(r2);
@@ -61,8 +71,19 @@ namespace spil
             r9.AddNorth(r8);
             r10.AddWest(r8);
             r10.AddSouth(r11);
+            r10.AddEast(r13);
+            r10.AddNorth(r14);
             r11.AddNorth(r10);
             r12.AddEast(r8);
+            r13.AddWest(r10);
+            r13.AddSouth(r15);
+            r13.AddEast(r17);
+            r13.AddNorth(r16);
+            r14.AddSouth(r10);
+            r15.AddNorth(r13);
+            r16.AddSouth(r13);
+            r17.AddWest(r13);
+            
 
 
 
