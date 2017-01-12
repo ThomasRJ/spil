@@ -18,6 +18,7 @@ namespace spil
 
             while(isRunning)
             {
+                //Gør det muligt at lukke spillet ved skrive exit i konsollen.
                 string s = Console.ReadLine();
                 if(s.ToLower().Equals("exit"))
                 {
@@ -36,30 +37,32 @@ namespace spil
             Console.WriteLine(world.p.currentRoom.ToString());
             while(readCommands)
             {
+                //gør det muligt at bruge taster til at bevæge sige rundt.
                 char c = Console.ReadKey(true).KeyChar;
                 switch (c)
                 {
+                    //Laver w til nord
                     case 'w':
                         if (world.p.currentRoom.north != null)
                         {
                             world.p.currentRoom = world.p.currentRoom.north;
                         }
                         break;
-
+                        //Laver a til vest
                     case 'a':
                         if (world.p.currentRoom.west != null) 
                         {
                             world.p.currentRoom = world.p.currentRoom.west;
                         }
                         break;
-
+                        //Laver s til syd
                     case 's':
                         if (world.p.currentRoom.south != null) 
                         {
                             world.p.currentRoom = world.p.currentRoom.south;
                         }
                         break;
-
+                        //Laver d til øst
                     case 'd':
                         if (world.p.currentRoom.east != null) 
                         {

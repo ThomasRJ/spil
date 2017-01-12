@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace spil
-{
+{ //Skulle have være brugt til lås mellem rummene, tjek design afsnit.
     public class Edge
     {
         public Room Room1 { get; set; }
