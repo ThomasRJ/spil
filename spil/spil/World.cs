@@ -27,9 +27,14 @@ namespace spil
             Room r9 = new Room("Celle#1", "En eller anden bor her");
             Room r10 = new Room("Cellegang#2", "Flere celler");
             Room r11 = new Room("Celle#2", "Din celle");
-            Room r12 = new Room("Badene", "øn'pojpokåo");
+            Room r12 = new Room("Badene", "Tag et bad");
+            Room r13 = new Room("Cellegang#3", "Flere celler");
+            Room r14 = new Room("Kantine", "Her spiser man... Som regel");
+            Room r15 = new Room("Celle#3", "Denne celle er tom");
+            Room r16 = new Room("Celle#4", "Her bor et røvhul");
+            Room r17 = new Room("Isolation", "Har du været slem? Ender du her");
 
-
+            //Tilføjer rummene
             rooms.Add(r1);
             rooms.Add(r2);
             rooms.Add(r3);
